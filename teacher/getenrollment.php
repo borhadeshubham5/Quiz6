@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +20,7 @@ th {text-align: left;}
 
 <?php
 include_once "../connectiondb.php";
-session_start();
+//session_start();
 $sname=$_GET['q'];
 $sql = "SELECT * FROM classregistered where sname='$sname';";
 $result=sqlsrv_query($conn, $sql);
