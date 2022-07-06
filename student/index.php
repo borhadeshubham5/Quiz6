@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
     <head>
         <link rel='stylesheet' href='../style.css'>
@@ -21,7 +22,7 @@
     <body onload="showClasses()">
         <center><h2>Shubham Subhash Borhade | 1001994235 | CSE6331 Advanced Database Systems | Quiz 6</h2></center><br>
         <?php 
-            session_start();
+            //session_start();
             $fname=$_SESSION["fname"];
             echo "<center>Welcome! $fname | <a href='logout.php'>Logout</a></center><br>";
         ?>
