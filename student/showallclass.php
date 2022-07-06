@@ -20,7 +20,7 @@ th {text-align: left;}
 
 <?php
 include_once "../connectiondb.php";
-session_start();
+//session_start();
 $sname=$_SESSION['fname'];
 $sql = "SELECT * FROM classdetails;";
 $result=sqlsrv_query($conn, $sql);
